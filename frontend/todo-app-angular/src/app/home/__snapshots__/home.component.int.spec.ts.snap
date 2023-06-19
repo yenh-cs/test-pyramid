@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent Integration Test should be able complete an incompleted todo item 1`] = `
+<app-home
+  allTodos$={[Function Store]}
+  completedTodos$={[Function Store]}
+  dialog={[Function MatDialog]}
+  incompletedTodos$={[Function Store]}
+  newTodo={[Function Object]}
+  store={[Function Store]}
+>
+  <div
+    class="container"
+  >
+    <h3>
+      All Todos
+    </h3>
+    <mat-tab-group
+      class="mat-mdc-tab-group mat-primary mat-mdc-tab-group-stretch-tabs"
+    >
+      <mat-tab-header
+        class="mat-mdc-tab-header"
+      >
+        <button
+          aria-hidden="true"
+          class="mat-ripple mat-mdc-tab-header-pagination mat-mdc-tab-header-pagination-before mat-mdc-tab-header-pagination-disabled"
+          disabled=""
+          mat-ripple=""
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="mat-mdc-tab-header-pagination-chevron"
+          />
+        </button>
+        <div
+          class="mat-mdc-tab-label-container _mat-animation-noopable"
+        >
+          <div
+            class="mat-mdc-tab-list"
+            role="tablist"
+            style="transform: translateX(0px);"
+          >
+            <div
+              class="mat-mdc-tab-labels"
+            >
+              <div
+                aria-disabled="false"
+                aria-posinset="1"
+                aria-selected="true"
+                aria-setsize="2"
+                cdkmonitorelementfocus=""
+                class="mdc-tab mat-mdc-tab mat-mdc-focus-indicator mdc-tab--active mdc-tab-indicator--active"
+                mattablabelwrapper=""
+                role="tab"
+                tabindex="0"
+              >
+                <span
+                  class="mdc-tab__ripple"
+                />
+                <div
+                  class="mat-ripple mat-mdc-tab-ripple"
+                  mat-ripple=""
+                />
+                <span
+                  class="mdc-tab__content"
+                >
+                  <span
+                    class="mdc-tab__text-label"
+                  >
+                    Incompleted
+                  </span>
+                </span>
+                <span
+                  class="mdc-tab-indicator"
+                >
+                  <span
+                    class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                  />
+                </span>
+              </div>
+              <div
+                aria-disabled="false"
+                aria-posinset="2"
+                aria-selected="false"
+                aria-setsize="2"
+                cdkmonitorelementfocus=""
+                class="mdc-tab mat-mdc-tab mat-mdc-focus-indicator"
+                mattablabelwrapper=""
+                role="tab"
+                tabindex="-1"
+              >
+                <span
+                  class="mdc-tab__ripple"
+                />
+                <div
+                  class="mat-ripple mat-mdc-tab-ripple"
+                  mat-ripple=""
+                />
+                <span
+                  class="mdc-tab__content"
+                >
+                  <span
+                    class="mdc-tab__text-label"
+                  >
+                    Completed
+                  </span>
+                </span>
+                <span
+                  class="mdc-tab-indicator"
+                >
+                  <span
+                    class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-hidden="true"
+          class="mat-ripple mat-mdc-tab-header-pagination mat-mdc-tab-header-pagination-after mat-mdc-tab-header-pagination-disabled"
+          disabled=""
+          mat-ripple=""
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="mat-mdc-tab-header-pagination-chevron"
+          />
+        </button>
+      </mat-tab-header>
+      <div
+        class="mat-mdc-tab-body-wrapper _mat-animation-noopable"
+      >
+        <mat-tab-body
+          class="mat-mdc-tab-body mat-mdc-tab-body-active"
+          role="tabpanel"
+        >
+          <div
+            cdkscrollable=""
+            class="mat-mdc-tab-body-content ng-trigger ng-trigger-translateTab"
+            style="transform:none;0:transform;"
+          >
+            <app-todo-list
+              style=""
+            >
+              <mat-card
+                class="mat-mdc-card mdc-card todo-card mat-elevation-z10"
+              >
+                <mat-card-header
+                  class="mat-mdc-card-header"
+                >
+                  <div
+                    class="mat-mdc-card-header-text"
+                  >
+                    <mat-card-title
+                      class="mat-mdc-card-title todo-title"
+                    >
+                      Grocery shopping
+                    </mat-card-title>
+                  </div>
+                </mat-card-header>
+                <mat-card-content
+                  class="mat-mdc-card-content"
+                  style="white-space: pre-line;"
+                >
+                  <p>
+                    1. A pack of carrots
+  2. Eggs
+                  </p>
+                </mat-card-content>
+                <mat-card-actions
+                  class="mat-mdc-card-actions mdc-card__actions todo-actions"
+                >
+                  <button
+                    color="accent"
+                    mat-raised-button=""
+                  >
+                     Remove 
+                  </button>
+                  <button
+                    color="accent"
+                    mat-raised-button=""
+                  >
+                     Edit 
+                  </button>
+                  <button
+                    color="primary"
+                  >
+                     Complete 
+                  </button>
+                </mat-card-actions>
+              </mat-card>
+              <mat-card
+                class="mat-mdc-card mdc-card todo-card mat-elevation-z10"
+              >
+                <mat-card-header
+                  class="mat-mdc-card-header"
+                >
+                  <div
+                    class="mat-mdc-card-header-text"
+                  >
+                    <mat-card-title
+                      class="mat-mdc-card-title todo-title"
+                    >
+                      Integration Test
+                    </mat-card-title>
+                  </div>
+                </mat-card-header>
+                <mat-card-content
+                  class="mat-mdc-card-content"
+                  style="white-space: pre-line;"
+                >
+                  <p>
+                    10 tests
+                  </p>
+                </mat-card-content>
+                <mat-card-actions
+                  class="mat-mdc-card-actions mdc-card__actions todo-actions"
+                >
+                  <button
+                    color="accent"
+                    mat-raised-button=""
+                  >
+                     Remove 
+                  </button>
+                  <button
+                    color="accent"
+                    mat-raised-button=""
+                  >
+                     Edit 
+                  </button>
+                  <button
+                    color="primary"
+                  >
+                     Complete 
+                  </button>
+                </mat-card-actions>
+              </mat-card>
+            </app-todo-list>
+          </div>
+        </mat-tab-body>
+        <mat-tab-body
+          class="mat-mdc-tab-body"
+          role="tabpanel"
+        >
+          <div
+            cdkscrollable=""
+            class="mat-mdc-tab-body-content ng-trigger ng-trigger-translateTab"
+            style="transform:translate3d(100%, 0, 0);min-height:1px;visibility:hidden;0:transform;1:min-height;2:visibility;"
+          >
+          </div>
+        </mat-tab-body>
+      </div>
+    </mat-tab-group>
+    <footer>
+      <button>
+        <img
+          class="icon"
+          src="assets/add.png"
+        />
+      </button>
+    </footer>
+  </div>
+</app-home>
+`;
