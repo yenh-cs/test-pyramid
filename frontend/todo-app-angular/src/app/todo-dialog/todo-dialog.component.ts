@@ -2,8 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Todo } from '../models/todo';
 import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
-import { TodoService } from '../services/todo.service';
-import { filter, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { TodosActions } from '../state/todos/todo.actions';
 

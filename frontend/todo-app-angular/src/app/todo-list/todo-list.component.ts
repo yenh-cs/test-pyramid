@@ -1,9 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from '../models/todo';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { filter, tap } from 'rxjs/operators';
-import { TodoDialogComponent } from '../todo-dialog/todo-dialog.component';
-import { TodoService } from '../services/todo.service';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';import { TodoDialogComponent } from '../todo-dialog/todo-dialog.component';
+
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { AppState } from '../state/app-state';
@@ -48,15 +46,15 @@ export class TodoListComponent implements OnInit {
   }
 
   removeTodo(todo: Todo) {
-    this.store.dispatch(TodosActions.removeTodo({ id: todo.id || 0 }))
+    this.store.dispatch(TodosActions.removeTodo({ id: todo.id || 0 }));
   }
 
   toggleTodo(todo: Todo) {
     const toggledTodo = {
       ...todo,
       completed: !todo.completed
-    }
-    this.store.dispatch(TodosActions.toggleTodo({ todo: toggledTodo }))
+    };
+    this.store.dispatch(TodosActions.toggleTodo({ todo: toggledTodo }));
   }
 }
     

@@ -81,7 +81,7 @@ export const todosReducer = createReducer(
     }
   }),
   on(TodosActions.removeTodo, (state, { id }) => ({
-    ...state,
-    todos: state.todos.filter((todo) => todo.id !== id),
+      ...state,
+      todos: state.todos.filter((todo) => todo.id !== id),
   })),
 );

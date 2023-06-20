@@ -48,7 +48,6 @@ export class TodoEffects {
       this.actions$.pipe(
         ofType(TodosActions.removeTodo),
         concatMap((action) => {
-          console.log(action.id)
           return from(this.todoService.deleteTodo(action.id))
         })
       ),
@@ -59,7 +58,6 @@ export class TodoEffects {
       this.actions$.pipe(
         ofType(TodosActions.updateTodo, TodosActions.toggleTodo),
         concatMap((action) => {
-          console.log(action.todo)
           return from(this.todoService.updateTodo(action.todo))
         })
       ),
