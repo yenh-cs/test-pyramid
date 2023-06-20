@@ -33,3 +33,11 @@ To run the application, go to the corresonding frontend folder and run command
 
 * Svelte: Go to frontend/todo-app-svelte
 `yarn start`
+
+# Integration Tests
+Integration tests have the format *\*.int.spec.ts*.
+For example: In frontend/todo-app-angular, run
+```
+npm test int.spec.ts
+```
+
