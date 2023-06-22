@@ -3,7 +3,7 @@
     {
       "title": "Grocery shopping",
       "description": "1. A pack of carrots\n2. Eggs",
-      "completed": false, 
+      "completed": false,
       "id": "0"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "title": "Pick up kid from school",
-      "description": "",
+      "description": "5pm",
       "completed": true,
       "id": "2"
     }

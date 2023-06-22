@@ -1,24 +1,24 @@
 <template>
  <div>
     <div v-for="todo in todos" :key="todo.id" class="list">
-      <div class="item">
+      <div class="item" :completed="todo.completed">
         <div>
           <div>
             <div :class="{ completed: todo.completed }" class="todo-title">{{ todo.title }}</div>
             <div :class="{ completed: todo.completed }" class="todo-description" style="white-space: pre-line">{{ todo.description }} </div>
           </div>
           <div class="icons">
-            <span @click.stop="toggleCompleted(todo)">&#x2713;</span>
-            <span @click="editModal=true">&#9998;</span> 
-            <span @click.stop="deleteTodo(todo.id)" class="fa">&#xf014;</span>
+            <span @click.stop="toggleCompleted(todo)" qa-id="toogle-button">&#x2713;</span>
+            <span @click="editModal=true" qa-id="edit-button">&#9998;</span> 
+            <span @click.stop="deleteTodo(todo.id)" class="fa" qa-id="delete-button">&#xf014;</span>
           </div>
           <div>
             <div v-if="editModal" class="modal" >
               <div class="modal-content">
-                <textarea id="autoresizing" :placeholder="todo.title" v-model="todo.title"></textarea>
-                <textarea id="autoresizing" :placeholder="todo.description" v-model="todo.description"></textarea>
-                <button @click.stop="editTodo(todo)">Save</button>
-                <button @click="editModal=false">Close</button>
+                <textarea id="autoresizing" :placeholder="todo.title" v-model="todo.title" qa-id="edit-title"></textarea>
+                <textarea id="autoresizing" :placeholder="todo.description" v-model="todo.description" qa-id="edit-description"></textarea>
+                <button @click.stop="editTodo(todo)" qa-id="edit-save-button">Save</button>
+                <button @click="editModal=false" qa-id="edit-close-button">Close</button>
               </div>
             </div> 
           </div>

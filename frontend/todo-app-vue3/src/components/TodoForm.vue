@@ -3,11 +3,11 @@
    <div>
     <form @submit.prevent="addTodoAndClear()">
       <div>
-        <input v-model="todo.title" type="text" placeholder="Title" /> 
-        <input v-model="todo.description" type="text" placeholder="Desription"/>
+        <input v-model="todo.title" type="text" placeholder="Title" qa-id="title"/> 
+        <input v-model="todo.description" type="text" placeholder="Desription" qa-id="description"/>
       </div>
       <div>
-        <button>Add</button>
+        <button qa-id="add-button">Add</button>
       </div>
     </form>
   </div>
@@ -33,8 +33,8 @@ export default defineComponent({
       completed: false
     }
 
-    function addTodoAndClear() {
-      todosStore.addTodo(todo.value);
+    async function addTodoAndClear() {
+      await todosStore.addTodo(todo.value);
       todo.value = {
         title: '', 
         description: '',
